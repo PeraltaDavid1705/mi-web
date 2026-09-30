@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pas2.html
+
+Sitemap: https://peraltadavid1705.github.io/mi-web/sitemap.xml

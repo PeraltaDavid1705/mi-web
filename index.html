@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Peralta | Técnico en Sistemas e Ingeniería de Sistemas</title>
+    <meta name="description"
+        content="Portafolio de David: técnico en sistemas teleinformáticos y estudiante de Ingeniería de Sistemas. Proyectos en desarrollo web, Python y Linux.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="David Alfonso Bravo Peralta">
+    <meta name="theme-color" content="#1a1d23">
+    <link rel="canonical" href="https://peraltadavid1705.github.io/mi-web/">
+
+    <!-- Seguridad: CSP (los encabezados HTTP reales van en _headers, ver SEGURIDAD.md) -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph / Twitter (vista previa al compartir) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Portafolio de David">
+    <meta property="og:title" content="David Peralta | Técnico en Sistemas e Ingeniería de Sistemas">
+    <meta property="og:description"
+        content="Portafolio de David: técnico en sistemas teleinformáticos y estudiante de Ingeniería de Sistemas. Proyectos en desarrollo web, Python y Linux.">
+    <meta property="og:url" content="https://peraltadavid1705.github.io/mi-web/">
+    <meta property="og:image" content="https://peraltadavid1705.github.io/mi-web/og-image.png">
+    <meta property="og:image:alt" content="Portafolio de David, estudiante de Ingeniería de Sistemas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="David Peralta | Técnico en Sistemas e Ingeniería de Sistemas">
+    <meta name="twitter:description"
+        content="Portafolio de David: técnico en sistemas teleinformáticos y estudiante de Ingeniería de Sistemas. Proyectos en desarrollo web, Python y Linux.">
+    <meta name="twitter:image" content="https://peraltadavid1705.github.io/mi-web/og-image.png">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="init.js"></script>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ===== BARRA DE NAVEGACIÓN FIJA ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo / Nombre -->
+            <a href="#inicio" class="nav-logo">&lt;Dev /&gt;</a>
+
+            <!-- Enlaces de navegación - Desktop -->
+            <div class="nav-links" id="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <!-- ===== <a href="#contacto" class="nav-link">Contacto</a>===== -->
+            </div>
+
+            <!-- Botón menú móvil -->
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="nav-links">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="contenido" tabindex="-1">
+        <!-- ===== SECCIÓN HERO / INICIO ===== -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <!-- Badge de presentación -->
+                <span class="hero-badge animate-fade-in">Estudiante de Ingeniería de Sistemas</span>
+
+                <!-- Nombre del estudiante -->
+                <h1 class="hero-title animate-fade-in delay-1">
+                    Hola, soy <span class="text-primary">David</span>
+                </h1>
+
+                <!-- Frase de presentación -->
+                <p class="hero-description animate-fade-in delay-2">
+                    Técnico en sistemas teleinformáticos con
+                    experiencia en manejo de servidores,
+                    mantenimiento preventivo y correctivo a equipos
+                    de cómputo. Conocimientos en sistemas
+                    operativos Windows y Linux.
+                </p>
+
+                <!-- Botones de acción -->
+                <div class="hero-buttons animate-fade-in delay-3">
+                    <!-- <a href="#contacto" class="btn btn-primary">Contáctame</a>-->
+                    <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
+                    <button type="button" class="btn btn-secondary js-share">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3" />
+                            <circle cx="6" cy="12" r="3" />
+                            <circle cx="18" cy="19" r="3" />
+                            <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                            <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+                        </svg>
+                        Compartir
+                    </button>
+                </div>
+            </div>
+
+            <!-- Indicador de scroll -->
+            <a href="#sobre-mi" class="scroll-indicator" aria-label="Scroll hacia abajo">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+                <!-- Título de la sección -->
+                <div class="section-header reveal">
+                    <h2 class="section-title">Sobre mí</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Descripción -->
+                    <div class="about-text">
+                        <p>
+                            Soy estudiante de Ingeniería de Sistemas y Técnico en Sistemas Teleinformáticos,
+                            con interés en el desarrollo de software,
+                            la administración de sistemas y la ciberseguridad.
+                            Actualmente continúo fortaleciendo mis conocimientos en programación, desarrollo web,
+                            sistemas Linux y tecnologías relacionadas con la seguridad informática.
+                        </p>
+                        <p>
+                            Me interesa comprender cómo funcionan los sistemas desde sus fundamentos,
+                            desarrollar soluciones propias y aprender de manera constante mediante proyectos y práctica.
+                            Mi objetivo es seguir creciendo profesionalmente en el área de tecnología,
+                            combinando el desarrollo de software con el conocimiento de sistemas y seguridad
+                            informática.
+                        </p>
+
+                        <!-- Objetivo profesional -->
+                        <div class="objective-card reveal">
+                            <h3>Objetivo Profesional</h3>
+                            <p>
+                                Estudiar Ingeniería de Sistemas y especializarme en ciberseguridad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjetas de intereses -->
+                    <div class="interests-grid">
+                        <!-- Programación -->
+                        <div class="interest-card reveal">
+                            <div class="interest-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <h3>Programación</h3>
+                            <p>Desarrollo de software y aplicaciones</p>
+                        </div>
+
+                        <!-- Ciberseguridad -->
+                        <div class="interest-card reveal">
+                            <div class="interest-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                </svg>
+                            </div>
+                            <h3>Ciberseguridad</h3>
+                            <p>Protección de sistemas e información</p>
+                        </div>
+
+                        <!-- Idiomas -->
+                        <div class="interest-card reveal">
+                            <div class="interest-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M2 12h20" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
+                            </div>
+                            <h3>Idiomas</h3>
+                            <p>Aprendizaje de nuevos idiomas</p>
+                        </div>
+
+                        <!-- Tecnología -->
+                        <div class="interest-card reveal">
+                            <div class="interest-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="16" height="16" x="4" y="4" rx="2" />
+                                    <rect width="6" height="6" x="9" y="9" rx="1" />
+                                    <path d="M15 2v2" />
+                                    <path d="M15 20v2" />
+                                    <path d="M2 15h2" />
+                                    <path d="M2 9h2" />
+                                    <path d="M20 15h2" />
+                                    <path d="M20 9h2" />
+                                    <path d="M9 2v2" />
+                                    <path d="M9 20v2" />
+                                </svg>
+                            </div>
+                            <h3>Tecnología</h3>
+                            <p>Nuevas tecnologías y tendencias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN HABILIDADES ===== -->
+        <section id="habilidades" class="section section-alt">
+            <div class="container">
+                <!-- Título de la sección -->
+                <div class="section-header reveal">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Capacidades en cuanto a Tecnologías y herramientas que he aprendido y continúo desarrollando en
+                        relación a mis habilidades propias
+                    </p>
+                </div>
+
+                <!-- Grid de habilidades -->
+                <div class="skills-grid">
+                    <!-- HTML -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-85 c-html" role="progressbar" aria-label="Nivel de HTML"
+                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-80 c-css" role="progressbar" aria-label="Nivel de CSS"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">10%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-10 c-python" role="progressbar" aria-label="Nivel de Python"
+                                aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- Git / GitHub -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">Git / GitHub</span>
+                            <span class="skill-percentage">30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-30 c-git" role="progressbar" aria-label="Nivel de Git / GitHub"
+                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- Linux -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux</span>
+                            <span class="skill-percentage">20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-20 c-linux" role="progressbar" aria-label="Nivel de Linux"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card reveal">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">40%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress w-40 c-js" role="progressbar" aria-label="Nivel de JavaScript"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN PROYECTOS ===== -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <!-- Título de la sección -->
+                <div class="section-header reveal">
+                    <h2 class="section-title">Proyectos</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Una selección de proyectos en los que he trabajado para desarrollar mis habilidades
+                    </p>
+                </div>
+
+                <!-- Grid de proyectos -->
+                <div class="projects-grid">
+                    <!-- Proyecto 1: Página Web Personal -->
+                    <article class="project-card reveal">
+                        <div class="project-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Página Web Personal</h3>
+                        <p class="project-description">
+                            Mi primer portafolio web creado con HTML, CSS y JavaScript. Un proyecto para aprender
+                            desarrollo web frontend y mostrar mis habilidades.
+                        </p>
+                        <p class="project-nota">Nota: Esta página web fue un proyecto personal y es esta misma en la
+                            que se encuentra.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/PeraltaDavid1705/mi-web" target="_blank" rel="noopener noreferrer"
+                            class="project-link"
+                            aria-label="Ver proyecto Página Web Personal en GitHub (se abre en una pestaña nueva)">
+                            Ver proyecto
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" x2="21" y1="14" y2="3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Proyecto 2: Orbiunix -->
+                    <article class="project-card reveal">
+                        <div class="project-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Orbiunix</h3>
+                        <p class="project-description">
+                            Entorno virtualizado con herramientas pensado en la gestion y organizacion de la vida
+                            universitaria.
+                        </p>
+                        <p class="project-nota">Nota: No disponible. Aun en desarrollo.</p>
+                        <div class="project-tags">
+                            <span class="tag">Organización</span>
+                            <span class="tag">Herramientas</span>
+                            <span class="tag">Universidad</span>
+                        </div>
+                        <a href="pas2.html" class="project-link" aria-label="Ver proyecto Orbiunix (aún en desarrollo)">
+                            Ver proyecto
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" x2="21" y1="14" y2="3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Proyecto 3: Ejercicios de Python -->
+                    <article class="project-card reveal">
+                        <div class="project-icon">
+
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <path d="m10 13-2 2 2 2" />
+                                <path d="m14 17 2-2-2-2" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Ejercicios de Python</h3>
+                        <p class="project-description">
+                            Colección de scripts y programas en Python para automatización, resolución de problemas
+                            algorítmicos y práctica de programación.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Algoritmos</span>
+                            <span class="tag">Automatización</span>
+                        </div>
+                        <a href="https://github.com/PeraltaDavid1705/Ejercicios-de-python" target="_blank"
+                            rel="noopener noreferrer" class="project-link"
+                            aria-label="Ver proyecto Ejercicios de Python en GitHub (se abre en una pestaña nueva)">
+                            Ver proyecto
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" x2="21" y1="14" y2="3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Proyecto 4: SportMaster -->
+                    <article class="project-card reveal">
+                        <div class="project-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">SportMaster</h3>
+                        <p class="project-description">
+                            Primera pagina web desarrollada con HTML, CSS y JavaScript. Un proyecto para aprender
+                            desarrollo web frontend.
+                            Desarrollada durante el curso de diseño y desarrollo de software en la universidad
+                            popular del cesar.
+                        </p>
+                        <p class="project-nota">Nota: Esta pagina fue un trabajo colaborativo.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/PeraltaDavid1705/SportMaster" target="_blank"
+                            rel="noopener noreferrer" class="project-link"
+                            aria-label="Ver proyecto SportMaster en GitHub (se abre en una pestaña nueva)">
+                            Ver proyecto
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" x2="21" y1="14" y2="3" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo / Nombre -->
+                <div class="footer-brand">
+                    <a href="#inicio" class="nav-logo">&lt;Dev /&gt;</a>
+                    <p>Estudiante de Ingeniería de Sistemas</p>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="social-links">
+                    <!-- GitHub -->
+                    <a href="https://github.com/PeraltaDavid1705" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub (se abre en una pestaña nueva)">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/davidperalta1705" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram (se abre en una pestaña nueva)">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/+573232281969" target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp (se abre en una pestaña nueva)">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-copyright">
+                    <p>&copy; <span id="year"></span> David Alfonso Bravo Peralta. Todos los derechos reservados.</p>
+                    <nav class="footer-legal" aria-label="Información legal">
+                        <a href="privacidad.html">Política de privacidad</a>
+                        <a href="cookies.html">Política de cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Aviso emergente (lectores de pantalla lo anuncian) -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
